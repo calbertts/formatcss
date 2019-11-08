@@ -9,8 +9,8 @@ qjsc \
   -fno-eval \
   -fno-proxy \
   -fno-date \
-  -fno-json \
   -fno-module-loader \
   index.js
 
+  #-fno-json \
 chmod a+x ./formatcss
