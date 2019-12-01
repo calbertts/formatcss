@@ -1,5 +1,5 @@
 rm ./formatcss
-qjsc \
+time qjsc \
   -o formatcss \
   -fno-string-normalize \
   -fno-map \
@@ -12,5 +12,4 @@ qjsc \
   -fno-module-loader \
   index.js
 
-  #-fno-json \
 chmod a+x ./formatcss
