@@ -4,10 +4,20 @@ import { cssbeautify } from 'cssbeautify.js'
 import { parseCommandLineOpts } from 'minimist.js'
 
 const args = parseCommandLineOpts(scriptArgs)
-let file   = std.in
 
+let file = std.in
 if (args.file) {
   file = std.open(args.file, 'r')
+}
+
+let cssFromURL
+if (args.url) {
+  const request = std.urlGet(args.url, {full: true})
+  if (request.status === 200) {
+    const preData = request.response.split('\n\r')
+    preData.shift()
+    cssFromURL = preData.join('')
+  }
 }
 
 let cssOpts = {
@@ -43,6 +53,8 @@ if (!isEmptyFile(file)) {
   }
 
   print(cssbeautify(fullCSS, cssOpts))
+} else if (cssFromURL) {
+  print(cssbeautify(cssFromURL, cssOpts))
 } else {
   console.log(`\n  No CSS was found\n`)
   std.exit(1)

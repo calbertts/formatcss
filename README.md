@@ -23,6 +23,9 @@ formatcss --file sample.css
 formatcss --file sample.css --indent '  '
 formatcss --file sample.css --openbrace end-of-line
 formatcss --file sample.css --autosemicolon
+
+# requires cURL
+formatcss --url https://www.w3schools.com/w3css/4/w3.css
 ```
 As part of a pipeline:
 ```
