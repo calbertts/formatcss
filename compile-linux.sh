@@ -1,6 +1,7 @@
-rm ./formatcss
+rm ./formatcss-ubuntu
 time qjsc \
-  -o formatcss \
+  -m \
+  -o formatcss-ubuntu \
   -fno-string-normalize \
   -fno-map \
   -fno-promise \
@@ -9,8 +10,7 @@ time qjsc \
   -fno-eval \
   -fno-proxy \
   -fno-date \
-  -fno-module-loader \
   index.js
 
-strip ./formatcss
-chmod a+x ./formatcss
+strip -s ./formatcss-ubuntu
+chmod a+x ./formatcss-ubuntu
