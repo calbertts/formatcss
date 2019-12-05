@@ -14,9 +14,13 @@ let cssFromURL
 if (args.url) {
   const request = std.urlGet(args.url, {full: true})
   if (request.status === 200) {
-    const preData = request.response.split('\n\r')
-    preData.shift()
-    cssFromURL = preData.join('')
+    if (request.response.startsWith('HTTP')) {
+      const preData = request.response.split('\n\r')
+      preData.shift()
+      cssFromURL = preData.join('')
+    } else {
+      cssFromURL = request.response
+    }
   }
 }
 
@@ -28,7 +32,9 @@ let cssOpts = {
 
 function isEmptyFile(file) {
   if (os.isatty(file)) {
-    file.seek(0, std.SEEK_END)
+    try {
+      file.seek(0, std.SEEK_END)
+    } catch(err) { return true }
     if (file.tell() === 0) {
       return true
     } else {
