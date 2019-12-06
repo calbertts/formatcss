@@ -9,7 +9,7 @@ Also it uses https://github.com/substack/minimist to parse command line argument
 Donwload and install the latest binary depending on your OS:
 
 ```
-curl -sL https://gist.githubusercontent.com/calbertts/85d12674a21cc20f414835590a294b67/raw/3b2656dfa3538a13b2f59f33a2ca15239b04019a/install-formatcss.sh | bash
+curl -sL https://gist.githubusercontent.com/calbertts/85d12674a21cc20f414835590a294b67/raw/033ea5f03ed2bbd31b830414ebb075ed2fa381cc/install-formatcss.sh | bash
 ```
 
 Dowload the release from *Releases* on GitHub
