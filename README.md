@@ -39,6 +39,12 @@ cat sample.css | formatcss
 cat sample.css | formatcss --indent '  '
 ```
 
+## How to uninstall
+Since this is a small binary with no dependencies, just remove it:
+```
+rm /usr/local/bin/formatcss
+```
+
 ## How to build
 
 This project requires the QuickJS compiler to be previously installed https://bellard.org/quickjs/
