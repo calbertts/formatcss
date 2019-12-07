@@ -6,14 +6,13 @@ Also it uses https://github.com/substack/minimist to parse command line argument
 
 ## How to install
 
-Donwload and install the latest binary depending on your OS:
+This donwloads and installs the latest binary depending on your OS:
 
 ```
 curl -sL https://gist.githubusercontent.com/calbertts/85d12674a21cc20f414835590a294b67/raw/92e8d3d362132ac641b0fa83489ffd6eaa56c417/install-formatcss.sh | sh
 ```
 
 Dowload the release from *Releases* on GitHub
-An automated way from command line will be implemented soon
 
 ## How to use
 
