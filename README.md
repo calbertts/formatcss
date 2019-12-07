@@ -41,6 +41,9 @@ cat sample.css | formatcss --indent '  '
 
 ## How to build
 
-This project was made by using https://bellard.org/quickjs/
-There's a `compile.sh` script included with the corresponding options
-The result executable has ~500KB of size
+This project requires the QuickJS compiler to be previously installed https://bellard.org/quickjs/
+Then just run:
+```
+make
+```
+The result executable has ~500KB of size and will have the name of the current OS/arch/distro
