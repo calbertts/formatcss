@@ -1,8 +1,7 @@
 # Format CSS from Command Line
 
-This utility uses https://github.com/senchalabs/cssbeautify to perform the beautify process
-
-Also it uses https://github.com/substack/minimist to parse command line arguments
+This is not intended to be fast but be small and portable in embedded systems and containers.
+It uses https://github.com/senchalabs/cssbeautify to perform the beautify process, as well as https://github.com/substack/minimist to parse command line arguments.
 
 ## How to install
 
