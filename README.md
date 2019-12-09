@@ -1,6 +1,6 @@
 # Format CSS from Command Line
 
-This is not intended to be fast but be small and portable in embedded systems and containers.
+This is not intended to be fast but be small (~500KB) and portable in embedded systems and containers.
 It uses https://github.com/senchalabs/cssbeautify to perform the beautify process, as well as https://github.com/substack/minimist to parse command line arguments.
 
 ## How to install
@@ -50,4 +50,3 @@ Then just run:
 ```
 make
 ```
-The result executable has ~500KB of size and will have the name of the current OS/arch/distro
