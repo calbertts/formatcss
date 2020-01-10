@@ -1,4 +1,4 @@
-echo -e "\n  Downloading formatcss...\n"
+echo "\n  Downloading formatcss...\n"
 
 platform=`uname -s`
 distro=`cat /etc/*-release 2>/dev/null | grep ^ID=[A-Za-z]* | sed s/ID=/-/g | sed s/\"//g`
