@@ -11,7 +11,7 @@ This donwloads and installs the latest binary depending on your OS (Windows isn'
 curl -sL https://gist.githubusercontent.com/calbertts/85d12674a21cc20f414835590a294b67/raw/bd16970b80ee632f6f248cdf8119ccba372a570c/install-formatcss.sh | sh
 ```
 
-Dowload the release from *Releases* on GitHub
+Download the release from *Releases* on GitHub
 
 ## How to use
 
