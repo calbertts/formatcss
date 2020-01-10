@@ -8,4 +8,4 @@ curl -sL -o formatcss github.com/calbertts/formatcss/releases/latest/download/fo
 chmod a+x formatcss
 sudo mv formatcss /usr/bin
 
-echo -e "\n  Great!, now you can run 'formatcss' from anywhere\n\n  Try with:\n  \e[92mformatcss --url https://www.w3schools.com/w3css/4/w3.css\n\n\e[0m"
+echo "\n  Great!, now you can run 'formatcss' from anywhere\n\n  Try with:\n  \e[92mformatcss --url https://www.w3schools.com/w3css/4/w3.css\n\n\e[0m"
