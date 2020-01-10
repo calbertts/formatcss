@@ -8,7 +8,7 @@ It uses https://github.com/senchalabs/cssbeautify to perform the beautify proces
 This donwloads and installs the latest binary depending on your OS (Windows isn't supported yet):
 
 ```
-curl -sL curl -sL https://raw.githubusercontent.com/calbertts/formatcss/master/install.sh | sh
+curl -sL https://raw.githubusercontent.com/calbertts/formatcss/master/install.sh | sh
 ```
 
 Download the release from *Releases* on GitHub
