@@ -18,7 +18,7 @@ install() {
       curl -sL -o formatcss github.com/calbertts/formatcss/releases/latest/download/formatcss-$platform$distro-$arch
       chmod a+x formatcss
       mv formatcss ~/.calbertts_tools
-      ln -s ~/.calbertts_tools/formatcss /usr/local/bin/formatcss || true
+      ln -s ~/.calbertts_tools/formatcss /usr/local/bin/formatcss 2>/dev/null
       export PATH
       echo "export PATH=\"\$PATH:\$HOME/.calbertts_tools\"" >> ~/.bashrc
 
