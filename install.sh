@@ -23,7 +23,7 @@ install() {
       echo "export PATH=\"\$PATH:\$HOME/.calbertts_tools\"" >> ~/.bashrc
 
       if which_formatcss="$(command -v formatcss)"; then
-        printf "\n  Great!, now reload your shell\n\n  Try with:\n  \e[92mformatcss --url https://www.w3schools.com/w3css/4/w3.css\n\n\e[0m"
+        printf "\n  Great!, now reload your shell with: source ~/.bashrc\n\n  Try with:\n  \e[92mformatcss --url https://www.w3schools.com/w3css/4/w3.css\n\n\e[0m"
       else
         printf "\n  Turns out there was an error installing formatcss, try it again\n"
       fi
