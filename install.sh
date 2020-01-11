@@ -12,8 +12,8 @@ install() {
     mkdir -p ~/.calbertts_tools
     PATH="$PATH:$HOME/.calbertts_tools"
     export PATH="$PATH:$HOME/.calbertts_tools"
-    echo "PATH=\"$PATH:$HOME/.calbertts_tools\"" >> ~/.bash_profile
-    echo "PATH=\"$PATH:$HOME/.calbertts_tools\"" >> /etc/profile
+    echo "export PATH=\"$PATH:$HOME/.calbertts_tools\"" >> ~/.bash_profile
+    echo "export PATH=\"$PATH:$HOME/.calbertts_tools\"" >> /etc/profile
 
     curl -sL -o formatcss github.com/calbertts/formatcss/releases/latest/download/formatcss-$platform$distro-$arch
     chmod a+x formatcss
