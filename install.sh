@@ -13,7 +13,7 @@ install() {
     PATH="$PATH:$HOME/.calbertts_tools"
     export PATH
     
-    if grep -q SomeString "$File"; then
+    if grep -q formatcss ~/.bashrc; then
       echo "export PATH=\"\$PATH:\$HOME/.calbertts_tools\"" >> ~/.bashrc
     else
       printf "\n  formatcss found in \$PATH\n\n"
