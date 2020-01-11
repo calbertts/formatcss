@@ -4,7 +4,7 @@ platform=`uname -s`
 distro=`cat /etc/*-release 2>/dev/null | grep ^ID=[A-Za-z]* | sed s/ID=/-/g | sed s/\"//g`
 arch=`uname -m`
 
-mkdir ~/.calbertts_tools
+mkdir -p ~/.calbertts_tools
 export PATH="$PATH:~/.calbertts_tools"
 
 curl -sL -o formatcss github.com/calbertts/formatcss/releases/latest/download/formatcss-$platform$distro-$arch
