@@ -14,9 +14,9 @@ install() {
     export PATH
     
     if grep -q formatcss ~/.bashrc; then
-      echo "export PATH=\"\$PATH:\$HOME/.calbertts_tools\"" >> ~/.bashrc
-    else
       printf "\n  formatcss found in \$PATH\n\n"
+    else
+      echo "export PATH=\"\$PATH:\$HOME/.calbertts_tools\"" >> ~/.bashrc
     fi
 
     curl -sL -o formatcss github.com/calbertts/formatcss/releases/latest/download/formatcss-$platform$distro-$arch
