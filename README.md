@@ -11,8 +11,6 @@ This donwloads and installs the latest binary depending on your OS (Windows isn'
 curl -sL https://raw.githubusercontent.com/calbertts/formatcss/master/install.sh | sh
 ```
 
-Download the release from *Releases* on GitHub
-
 ## How to use
 
 ##### Available options:
@@ -40,7 +38,7 @@ cat sample.css | formatcss --indent '  '
 ## How to uninstall
 Since this is a small binary with no dependencies, just remove it:
 ```
-rm /usr/local/bin/formatcss
+rm ~/.calbertts_tools/formatcss
 ```
 
 ## How to build
