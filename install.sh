@@ -11,7 +11,6 @@ install() {
   else
     mkdir -p ~/.calbertts_tools
     PATH="$PATH:$HOME/.calbertts_tools"
-    export PATH
     
     if grep -q formatcss ~/.bashrc; then
       printf "\n  formatcss found in \$PATH\n\n"
@@ -20,6 +19,7 @@ install() {
       chmod a+x formatcss
       mv formatcss ~/.calbertts_tools
       echo "export PATH=\"\$PATH:\$HOME/.calbertts_tools\"" >> ~/.bashrc
+      source ~/.bashrc
 
       if which_formatcss="$(command -v formatcss)"; then
         printf "\n  Great!, now you can run 'formatcss' from anywhere\n\n  Try with:\n  \e[92mformatcss --url https://www.w3schools.com/w3css/4/w3.css\n\n\e[0m"
