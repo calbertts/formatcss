@@ -4,7 +4,7 @@ platform=`uname -s`
 distro=`cat /etc/*-release 2>/dev/null | grep ^ID=[A-Za-z]* | sed s/ID=/-/g | sed s/\"//g`
 arch=`uname -m`
 
-check() {
+install() {
   if which_formatcss="$(command -v formatcss)"; then
     printf "\n  formatcss is already installed\n\n"
     printf "\n  Try with:\n  \e[92mformatcss --url https://www.w3schools.com/w3css/4/w3.css\n\n\e[0m"
@@ -23,3 +23,5 @@ check() {
   fi
   return 1
 }
+
+install
